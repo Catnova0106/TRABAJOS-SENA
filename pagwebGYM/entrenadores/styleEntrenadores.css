@@ -1,0 +1,102 @@
+/* styleEntrenadores.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+  }
+  
+  header {
+    background-color: #333; /* Cabecera en azul oscuro */
+    color: #fff; /* Texto en blanco */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ccc; /* Texto en gris claro al pasar el mouse */
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333; /* Título en azul oscuro */
+    margin-bottom: 20px;
+  }
+  
+  .entrenadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .entrenador {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 250px; /* Ancho del artículo */
+  }
+  
+  .entrenador:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+    transform: scale(1.05); /* Escalar al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .entrenador img {
+    width: 100%; /* Ancho de la imagen */
+    height: 150px; /* Alto de la imagen */
+    object-fit: cover; /* Ajustar imagen al contenedor */
+    border-radius: 10px 10px 0 0; /* Esquinas redondeadas */
+  }
+  
+  .entrenador h2 {
+    margin-top: 0;
+  }
+  
+  .entrenador p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Botones en verde */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41; /* Botones en verde oscuro al pasar el mouse */
+  }

@@ -1,0 +1,76 @@
+<!-- contacto.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styleContacto.css">
+    <title>Contacto - Fábrica de Fitness Gimnasio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/inicio/index.html">Inicio</a></li>
+          <li><a href="/acerca de/acercade.html">Acerca de</a></li>
+          <li><a href="/entrenadores/entre.html">Entrenadores</a></li>
+          <li><a href="#" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contacto</h1>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+        <label for="entrenador">Entrenador:</label>
+
+        <select id="entrenador" name="entrenador">
+      
+          <option value="">Seleccione un entrenador</option>
+          <option value="Harold">Harold Guerrero (50€/hora)</option>
+          <option value="Estefany">Estefany Gomez (40€/hora)</option>
+          <option value="Diego">Diego Guerra (60€/hora)</option>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar campos">
+      </form>
+      <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var entrenador = document.querySelector('#entrenador').value;
+    if (entrenador === '') {
+      document.querySelector('main').innerHTML += '<p style="color: red;">Por favor, seleccione un entrenador.</p>';
+    } else {
+      var precio = document.querySelector(`#entrenador option[value="${entrenador}"]`).textContent.match(/\((\d+)€\/hora\)/)[1];
+      window.location.href = `eleccion.html?entrenador=${entrenador}&precio=${precio}`;
+    }
+  });
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var entrenador = document.querySelector('#entrenador').value;
+    var precio = document.querySelector(`#entrenador option[value="${entrenador}"]`).textContent.match(/\((\d+)€\/hora\)/)[1];
+    document.querySelector('main').innerHTML += '<p style="color: gray;">Enviando formulario...</p>';
+    setTimeout(function() {
+      window.location.href = `eleccion.html?entrenador=${entrenador}&precio=${precio}`;
+    }, 1000);
+  });
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var entrenador = document.querySelector('#entrenador').value;
+          var precio = document.querySelector(`#entrenador option[value="${entrenador}"]`).textContent.match(/\((\d+)€\/hora\)/)[1];
+          window.location.href = `eleccion.html?entrenador=${entrenador}&precio=${precio}`;
+          document.querySelector('main').innerHTML += '<p style="color: green;">¡Formulario enviado correctamente!</p>';
+        });
+      </script>
+    </main>
+    <footer>
+      <p> 2024 Gimnasio</p>
+    </footer>
+  </body>
+</html>

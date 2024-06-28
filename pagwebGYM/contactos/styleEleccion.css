@@ -1,0 +1,46 @@
+/* styleEleccion.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+  }
+  
+  h1 {
+    color: #333; /* Título en azul oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 50%; /* Ancho del formulario */
+    margin: 40px auto; /* Centrar formulario */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  input[type="hidden"] {
+    display: none; /* Ocultar inputs hidden */
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    color: #00698f; /* Texto en azul claro */
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Botones en verde */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41; /* Botones en verde oscuro al pasar el mouse */
+  }

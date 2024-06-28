@@ -1,0 +1,189 @@
+/* style2.css */
+
+/* Estilos generales */
+h1 {
+    font-size: 64px; /* Aumenté el tamaño de fuente a 64px */
+    font-weight: bold;
+    color: #337ab7;
+    text-align: center;
+    animation: wave 3s infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px); /* Aumenté la amplitud del movimiento a 20px */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .paragraph-container {
+    margin-bottom: 20px;
+  }
+  
+  .paragraph-container p {
+    color: #666;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Estilos para la navegación */
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Estilos para la sección de introducción */
+  .introduccion {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .introduccion h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #337ab7;
+  }
+  
+  .introduccion ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .introduccion li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .introduccion li:before {
+    content: "\2713"; /* Unicode character for a checkmark */
+    font-size: 18px;
+    color: #337ab7;
+    margin-right: 10px;
+  }
+  
+  .introduccion p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif; /* Tipo de letra Lato, una fuente moderna y elegante */
+    font-size: 18px; /* Tamaño de fuente decente */
+    text-align: center; /* Centré el texto */
+    color: #333; /* Color de texto oscuro pero no demasiado */
+    margin-bottom: 20px; /* Agregué un margen inferior para darle espacio */
+  }
+  /* Estilos para la sección de entrenadores */
+  
+  .entrenadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .entrenador {
+    margin: 20px;
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .entrenador img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .entrenador h2 {
+    margin-top: 10px;
+    color: #337ab7;
+  }
+  
+  .entrenador .paragraph-container p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  /* Estilos para el footer */
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }

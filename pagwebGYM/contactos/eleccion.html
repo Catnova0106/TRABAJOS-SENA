@@ -1,0 +1,20 @@
+<!-- eleccion.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elegir Entrenador - Fábrica de Fitness Gimnasio</title>
+    <link rel="stylesheet" type="text/css" href="styleEleccion.css">
+  </head>
+  <body>
+    <h1>Elegir Entrenador</h1>
+    <form action="eleccion.php" method="get">
+      <input type="hidden" name="entrenador" value="<?php echo $_GET['entrenador']; ?>">
+      <input type="hidden" name="precio" value="<?php echo $_GET['precio']; ?>">
+      <p>Has seleccionado al entrenador <strong><?php echo $_GET['entrenador']; ?></strong> con un precio de <strong><?php echo $_GET['precio']; ?>€/hora</strong>.</p>
+      <p>¿Desea continuar con la reserva?</p>
+      <input type="submit" value="Sí, continuar">
+      <input type="submit" value="No, volver atrás">
+    </form>
+  </body>
+</html>
